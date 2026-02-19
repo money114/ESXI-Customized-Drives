@@ -2,10 +2,7 @@
 
 ESXi 6.7封装第三方驱动    
 -
-1.以管理员权限运行Windows PowerShell安装VMware-PowerCLI-10.2.0-9372002    
-```
-Install-Module -Name VMware.PowerCLI -RequiredVersion 10.2.0.9372002 
-```
+1.下载安装VMware-PowerCLI-10.2.0-9372002    
 2.下载最新ESXi6.7的zip文件    
 3.下载6.7u3目录文件和ESXi-Customizer-PS.ps1    
 4.将下载的ESXi和驱动文件放在同一目录    
