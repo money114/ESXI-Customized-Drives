@@ -2,11 +2,16 @@
 
 ESXi 6.7封装第三方驱动    
 -
-1.下载安装VMware-PowerCLI-10.2.0-9372002    
-2.下载最新ESXi6.7的zip文件    
-3.下载6.7u3目录文件和ESXi-Customizer-PS.ps1    
-4.将下载的ESXi和驱动文件放在同一目录    
-5.PowerShell命令中将路径指向第4步的目录运行命令      
+1.下载VMware-PowerCLI-10.2.0-9372002    
+2.在PowerShell中运行    
+```
+$env:PSModulePath
+```
+3.将VMware-PowerCLI-10.2.0-9372002文件复制到上述对应的目录    
+4.下载最新ESXi6.7的zip文件    
+5.下载6.7u3目录文件和ESXi-Customizer-PS.ps1    
+6.将下载的ESXi和驱动文件放在同一目录    
+7.PowerShell命令中将路径指向第4步的目录运行命令      
 ```
 .\ESXi-Customizer-PS.ps1 -izip .\ESXi670-xxxxxxxxx.zip -pkgDir .\6.7u3 -nsc
 ```
